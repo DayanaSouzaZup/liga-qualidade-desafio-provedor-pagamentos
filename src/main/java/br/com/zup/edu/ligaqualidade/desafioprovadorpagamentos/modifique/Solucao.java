@@ -1,9 +1,28 @@
 package br.com.zup.edu.ligaqualidade.desafioprovadorpagamentos.modifique;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import br.com.zup.edu.ligaqualidade.desafioprovadorpagamentos.pronto.DadosTransacao;
+import br.com.zup.edu.ligaqualidade.desafioprovadorpagamentos.pronto.MetodoPagamento;
+
+
 public class Solucao {
+	
+	private DadosTransacao[] formaPagamento;
+	
+	public Solucao() {
+		
+		this.formaPagamento = new DadosTransacao[10];
+	}
+	
+	public void adicionaPagamento(BigDecimal valor, MetodoPagamento metodo, String numero, String nome, LocalDate validade, int cvv, int id) {
+		
+		FormaPagamento pagamentoAdicionado = new FormaPagamento(status, valorOriginal, valorASerRecebidoDeFato,dataEsperadoRecebimento)
+	}
+	
 
 	/**
 	 * 
